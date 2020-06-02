@@ -36,7 +36,7 @@
     },
     methods: {
       addPost(){
-        console.log(this.post);
+        ///console.log(this.post);
       }
     }
   }
