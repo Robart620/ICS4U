@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="preview();">
+
+    <h1>Electric <del>and Magnetic</del> Field Simulator!</h1>
+    
+    <canvas id="canvas" width="1000" height="600"></canvas>
+
+
+    <div class="range-wrap">
+        <p class="slider-name">Mass (kg)</p>
+        <input id="input-mass" type="range" class="range" min="1" max="100" name="mass" onchange="preview();">
+        <output for="mass" class="range-value" onforminput="value = mass.valueAsNumber;"></output><br>
+    </div>
+
+    <!-- <div class="range-wrap">
+        <p class="slider-name">bField</p>
+        <input id="input-B-field" type="range" class="range" min="0" max="100" name="b-field" onchange="preview();">
+        <output for="b-field" class="range-value" onforminput="value = bField.valueAsNumber;"></output><br>
+    </div> -->
+
+    <div class="range-wrap">
+        <p class="slider-name">Electric Field (N/C)</p>
+        <input id="input-E-field" type="range" class="range" min="0" max="100" name="e-field" onchange="preview();">
+        <output for="e-field" class="range-value" onforminput="value = eField.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Electric Field Direction (degrees counterclockwise)</p>
+        <input id="input-E-field-direction" type="range" class="range" min="0" max="359" name="e-field-direction" onchange="preview();">
+        <output for="e-field-direction" class="range-value" onforminput="value = eFieldDirection.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Initial Velocity (m/s)</p>
+        <input id="input-initial-velocity" type="range" class="range" min="0" max="100" name="initial-velocity" onchange="preview();">
+        <output for="initial-velocity" class="range-value" onforminput="value = initialVelocity.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Initial Velocity Direction (degrees counterclockwise)d</p>
+        <input id="input-initial-velocity-direction" type="range" class="range" min="0" max="359" name="initial-velocity-direction" onchange="preview();">
+        <output for="initial-velocity-direction" class="range-value" onforminput="value = initalVelocityDirection.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Starting X Position</p>
+        <input id="input-initial-x" type="range" class="range" min="100" max="900" name="initial-x" onchange="preview();">
+        <output for="initial-x" class="range-value" onforminput="value = initialX.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Starting Y Position</p>
+        <input id="input-initial-y" type="range" class="range" min="100" max="500" name="initial-y" onchange="preview();">
+        <output for="initialY" class="range-value" onforminput="value = initialY.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Collision Elasticity</p>
+        <input id="elasticity" type="range" class="range" min="0" max="100" name="elasticity" onchange="preview();">
+        <output for="elasticity" class="range-value" onforminput="value = elasticity.valueAsNumber;"></output><br>
+    </div>
+
+    <div class="range-wrap">
+        <p class="slider-name">Charge on Particle (uC)</p>
+        <input id="input-charge" type="range" class="range" min="-100" max="100" name="charge" onchange="preview();">
+        <output for="charge" class="range-value" onforminput="value = charge.valueAsNumber;"></output><br>
+    </div>
+
+    <!-- <p>b-field into page?</p>
+    <input id="input-B-field-direction" type="checkbox" onchange="preview();"><br> -->
+
+    <div class="start">    
+        <input id="input-run-sim" class="start-button" type="radio" onchange="runSim();"> 
+        <p class="button-name">Run Simulation</p>
+    </div>
+
+    <div class="stop">
+        <input type="submit" class="stop-sim" value="STOP" onclick="stopSim();">
+    </div>
+
+</body>
+
+<footer>
+    <script src="main.js"></script>
+</footer>
+</html>
