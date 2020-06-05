@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Arrays Review/src/com.bayviewglen.nQueens&apos;&#x0D;&#x0A;- Original project: &apos;Arrays Review&apos;&#x0D;&#x0A;- Destination element: &apos;Arrays Review/src/com.bayviewglen.nQueens&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.bayviewglen.stackQueue.IntArrayStack.java&#x0D;&#x0A;     com.bayviewglen.stackQueue.Stack.java" description="Copy compilation units" destination="/src&lt;com.bayviewglen.nQueens" element1="/src&lt;com.bayviewglen.stackQueue{IntArrayStack.java" element2="/src&lt;com.bayviewglen.stackQueue{Stack.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568759408466" units="2" version="1.0"/>
+</session>

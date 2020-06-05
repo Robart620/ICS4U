@@ -1,3 +1,4 @@
-/DataGame/
-/.vscode/
-/JSWorkspaces/
+.metadata
+DataGame
+.recommenders
+node_modules/
